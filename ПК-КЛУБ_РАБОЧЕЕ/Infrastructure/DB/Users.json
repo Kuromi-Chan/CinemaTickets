@@ -1,0 +1,33 @@
+[
+  {
+    "Id": 1,
+    "Email": "12345@mail.ru",
+    "Password": "12345",
+    "Name": "Sasha",
+    "Surname": "Biziuk",
+    "Tickets": [
+      {
+        "Id": 1,
+        "OccupancyId": 1,
+        "PlaceNumber": 1,
+        "TicketPrice": 10.5
+      }
+     
+    ]
+  },
+  {
+    "Id": 2,
+    "Email": "123@mail.ru",
+    "Password": "123",
+    "Name": "саса",
+    "Surname": "бизю",
+    "Tickets": [
+      {
+        "Id": 1,
+        "OccupancyId": 42,
+        "PlaceNumber": 11,
+        "TicketPrice": 12.0
+      }
+    ]
+  }
+]

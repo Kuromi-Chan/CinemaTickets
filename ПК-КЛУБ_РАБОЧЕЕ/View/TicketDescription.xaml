@@ -1,0 +1,49 @@
+﻿<Window x:Class="Kurs.View.TicketDescription"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kurs.View"
+        mc:Ignorable="d"
+        Title="TicketDescription" Height="360" Width="560" Background="#FF454545" Loaded="Window_Loaded" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Canvas x:Name="ticketToPrint" HorizontalAlignment="Left" Margin="25,64,0,0" VerticalAlignment="Top" Height="190" Width="490" Background="#FF565656">
+            <Rectangle Height="190" Stroke="#FF727272" Width="400" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="filmNameLable" Content="Название фильма" Height="35" Width="205" Foreground="#DDBBBBBB" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Canvas.Left="15" VerticalAlignment="Top"/>
+            <Label Content="Зал" Height="29" Width="77" Foreground="#DDBBBBBB" FontSize="16" HorizontalAlignment="Left" Canvas.Left="15" Canvas.Top="60" VerticalAlignment="Top"/>
+            <Label Content="Место" Height="29" Width="85" Foreground="#DDBBBBBB" FontSize="16" HorizontalAlignment="Left" Canvas.Left="115" Canvas.Top="60" VerticalAlignment="Top"/>
+            <Label x:Name="OccupTimeFromLable" Content="12:30" Height="25" Width="55" Foreground="#DDBBBBBB" FontWeight="Bold" HorizontalAlignment="Left" Canvas.Left="238" Canvas.Top="64" VerticalAlignment="Center"/>
+            <Label x:Name="OccupTimeToLable" Content="14:00" Height="25" Width="55" Foreground="#DDBBBBBB" FontWeight="Bold" HorizontalAlignment="Left" Canvas.Left="239" Canvas.Top="98" VerticalAlignment="Top"/>
+            <Label Content="|" Height="18" Width="20" Foreground="#DDBBBBBB" HorizontalAlignment="Left" Canvas.Left="253" Canvas.Top="81" VerticalAlignment="Top"/>
+            <Label x:Name="PlaceLabel" Content="12" Height="25" Width="55" Foreground="#DDBBBBBB" FontWeight="Bold" HorizontalAlignment="Left" Canvas.Left="120" Canvas.Top="98" VerticalAlignment="Top"/>
+            <Label x:Name="hallLabel" Content="2" Height="24" Width="55" Foreground="#DDBBBBBB" FontWeight="Bold" HorizontalAlignment="Center" Canvas.Left="20" Canvas.Top="98" VerticalAlignment="Top"/>
+            <Label x:Name="OccupDateFromLable" Content="25.05.2023" Height="25" Width="72" Foreground="#DDBBBBBB" HorizontalAlignment="Center" Canvas.Left="20" Canvas.Top="145" VerticalAlignment="Top"/>
+            <Label x:Name="OccupTimeFromLable2" Content="14:00" Height="25" Width="55" Foreground="#DDBBBBBB" HorizontalAlignment="Center" Canvas.Left="20" Canvas.Top="165" VerticalAlignment="Top"/>
+            <Label Content="Кинотеатр «Беларусь»" Height="26" Width="130" Foreground="#DDFFFFFF" HorizontalAlignment="Left" Canvas.Left="245" Canvas.Top="153" VerticalAlignment="Top"/>
+            <Rectangle Height="2" Stroke="#FF727272" Width="400" Fill="#FF727272" HorizontalAlignment="Center" Canvas.Top="35" VerticalAlignment="Top"/>
+            <Rectangle HorizontalAlignment="Left" Height="190" VerticalAlignment="Top" Width="100" Fill="#FF673AB7" Canvas.Left="390"/>
+            <Label  Content="КОНТРОЛЬ" Height="34" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontSize="24" Foreground="#DDFFFFFF" Canvas.Left="346" Canvas.Top="71">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-91.216"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Ellipse HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="25" Fill="#FF673AB7" RenderTransformOrigin="0.4,0.501" Canvas.Left="380"/>
+            <Ellipse HorizontalAlignment="Left" Height="40" VerticalAlignment="Center" Width="25" Fill="#FF673AB7" RenderTransformOrigin="0.4,0.501" Canvas.Left="379" Canvas.Top="30"/>
+            <Ellipse HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="25" Fill="#FF673AB7" RenderTransformOrigin="0.4,0.501" Canvas.Left="378" Canvas.Top="62"/>
+            <Ellipse HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="25" Fill="#FF673AB7" RenderTransformOrigin="0.4,0.501" Canvas.Left="378"/>
+            <Ellipse HorizontalAlignment="Left" Height="40" VerticalAlignment="Center" Width="25" Fill="#FF673AB7" RenderTransformOrigin="0.4,0.501" Canvas.Left="378" Canvas.Top="90"/>
+            <Ellipse HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="25" Fill="#FF673AB7" RenderTransformOrigin="0.4,0.501" Canvas.Left="379" Canvas.Top="120"/>
+            <Ellipse HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="25" Fill="#FF673AB7" RenderTransformOrigin="0.4,0.501" Canvas.Left="380" Canvas.Top="150"/>
+
+        </Canvas>
+        <Button Content="Печать" HorizontalAlignment="Center" Height="25" Margin="0,279,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click"/>
+
+
+
+    </Grid>
+</Window>

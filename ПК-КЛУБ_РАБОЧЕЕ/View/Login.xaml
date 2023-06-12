@@ -1,0 +1,19 @@
+﻿<Window x:Class="Kurs.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kurs"
+        mc:Ignorable="d"
+        Title="Login" Height="301" Width="369" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Вход                " HorizontalAlignment="Left" Margin="164,36,0,0" VerticalAlignment="Top" Height="25" Width="83" FontFamily="Cooper Black" FontSize="14"/>
+        <TextBox x:Name="loginField" HorizontalAlignment="Left" Margin="115,79,0,0" TextWrapping="Wrap" Text="e-mail" VerticalAlignment="Top" Width="181" Height="26" GotFocus="loginFieldGotFocus"/>
+        <Label Content="Логин:" HorizontalAlignment="Left" Margin="47,79,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль:" HorizontalAlignment="Left" Margin="47,129,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="passwordField" Height="25" Margin="115,129,73,0" VerticalAlignment="Top" Password="Пароль" GotFocus="PasswordBoxGotFocus" />
+        <Button Content="Войти" HorizontalAlignment="Left" Margin="151,206,0,0" VerticalAlignment="Top" Height="28" Width="87" Click="LogInButtonClick" Cursor="Hand"/>
+        <Label x:Name="RegistrationLable" Content="Зарегестрироваться" HorizontalAlignment="Left" Height="26" Margin="212,5,0,0" VerticalAlignment="Top" Width="157" FontStyle="Italic" FontWeight="Bold" MouseLeftButtonDown="RegistrationLable_MouseLeftButtonDown"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,108 @@
+﻿<Window x:Class="Kurs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:Custom="clr-namespace:Kurs"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Kurs"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib" x:Name="mainWindow"
+        xmlns:av="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av"
+       
+        Title="MainWindow" Height="600" Width="1000" WindowStartupLocation="CenterScreen"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+         TextElement.FontWeight="SemiBold"
+         TextElement.FontSize="12"
+         TextOptions.TextFormattingMode="Ideal"
+         TextOptions.TextRenderingMode="Auto"
+         FontFamily="{DynamicResource MaterialDesignFont}" Loaded="mainWindow_Loaded" Background="#FF454545" Closing="mainWindow_Closing" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="535*"/>
+        </Grid.RowDefinitions>
+
+        <Image x:Name="goToMainPageImage" Width="50" Height="30" Margin="824,9,126,10"  Source="/View/images/главная.png"  MouseLeftButtonDown="goToMainPage_MouseLeftButtonDown" MouseEnter="MenuImage_MouseEnter" MouseLeave="MenuImage_MouseLeave"/>
+        <Image x:Name="searchImage" Width="50" Height="30" Margin="876,10,74,9" Source="/View/images/поиск.png" MouseLeftButtonDown="searchLable_MouseLeftButtonDown" MouseEnter="MenuImage_MouseEnter" MouseLeave="MenuImage_MouseLeave"/>
+        <Image x:Name="LoginImage" Width="50" Height="30" Margin="925,10,25,9" Source="/View/images/пользователь.png"  MouseLeftButtonDown="AccountLable_MouseLeftButtonDown" MouseEnter="MenuImage_MouseEnter" MouseLeave="MenuImage_MouseLeave"/>
+
+        <Custom:BuyPage x:Name ="buyPage" Visibility="Hidden" Grid.RowSpan="2"/>
+        <Custom:FilmDescription x:Name ="filmDescription" Visibility="Hidden" Grid.RowSpan="2"></Custom:FilmDescription>
+        <Custom:Account x:Name="AccountPage" Visibility="Hidden" Grid.RowSpan="2"/>
+        <Custom:Search x:Name="SearchPage" Visibility="Hidden" Grid.RowSpan="2"/>
+        <Custom:Registration x:Name="registrationPage" Visibility="Hidden" Grid.RowSpan="2"></Custom:Registration>
+        <DataGrid x:Name="filmsGrid" Grid.Row="1" av:ItemsSource="{av:SampleData ItemCount=5}" Background="#1F000000" Foreground="#DDFFFFFF" Margin="25,40,32,0" AutoGenerateColumns="False" IsReadOnly="True" EnableRowVirtualization="False" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" RowDetailsVisibilityMode="Collapsed" >
+            
+            
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="" Width="120" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding previewPath}" />
+
+                        </DataTemplate>
+
+                    </DataGridTemplateColumn.CellTemplate>
+
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Жанр" Width="280" >
+
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding janr}" TextWrapping="Wrap" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <DataGridTemplateColumn.HeaderStyle>
+
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="BorderBrush" Value="Transparent"/>
+                        </Style>
+                    </DataGridTemplateColumn.HeaderStyle>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="Рейтинг" Width="130" Binding="{Binding rating}">
+
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="BorderBrush" Value="Transparent"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="В прокате до" Width="170" Binding="{Binding filmDo}">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="BorderBrush" Value="Transparent"/>
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+                <DataGridTemplateColumn Header="" Width="200">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="GoToDescriptionButton" Content="Купить билет"  Click="GoToDescriptionButton_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                    <DataGridTemplateColumn.HeaderStyle>
+                        <Style  TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Left" />
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="BorderBrush" Value="Transparent"/>
+                        </Style>
+                    </DataGridTemplateColumn.HeaderStyle>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,44,0,0" Stroke="#FF313131" VerticalAlignment="Top" Width="1000"/>
+        <Label Content="Кинотеатр &quot;Беларусь&quot;" HorizontalAlignment="Left" Height="29" Margin="10,0,0,0" VerticalAlignment="Center" Width="225" Foreground="#DDFFFFFF" FontWeight="Bold" FontSize="14" FontStyle="Italic"/>
+
+
+    </Grid>
+</Window>

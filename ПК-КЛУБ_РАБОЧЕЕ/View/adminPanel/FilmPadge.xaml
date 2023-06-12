@@ -1,0 +1,26 @@
+﻿<Window x:Class="Kurs.FilmPadge"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kurs"
+        mc:Ignorable="d"
+        Title="FilmPadge" Height="421" Width="594" Background="#FF454545" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image x:Name="igage" HorizontalAlignment="Left"  Height="164" Margin="10,64,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label Content="Название:" HorizontalAlignment="Left" Height="23" Margin="180,64,0,0" VerticalAlignment="Top" Width="102" Foreground="White"/>
+        <TextBox x:Name="nameTB" HorizontalAlignment="Left" Height="23" Margin="293,64,0,0" TextWrapping="Wrap" Text="{Binding filmName}" VerticalAlignment="Top" Width="291" Foreground="White"/>
+        <Label Content="Жанр" HorizontalAlignment="Left" Height="23" Margin="180,87,0,0" VerticalAlignment="Top" Width="102" Foreground="White"/>
+        <TextBox x:Name="janrTB" HorizontalAlignment="Left" Height="23" Margin="293,87,0,0" TextWrapping="Wrap" Text="{Binding janr}" VerticalAlignment="Top" Width="291" Foreground="White"/>
+        <Label Content="Рейтинг" HorizontalAlignment="Left" Height="23" Margin="180,115,0,0" VerticalAlignment="Top" Width="102" Foreground="White"/>
+        <TextBox x:Name="ratingTB" HorizontalAlignment="Left" Height="23" Margin="293,115,0,0" TextWrapping="Wrap" Text="{Binding rating}" VerticalAlignment="Top" Width="166" Foreground="White"/>
+        <Label Content="В прокате до" HorizontalAlignment="Left" Height="23" Margin="180,143,0,0" VerticalAlignment="Top" Width="102" Foreground="White"/>
+        <TextBox x:Name="filmDoTB" HorizontalAlignment="Left" Height="23" Margin="293,143,0,0" TextWrapping="Wrap" Text="{Binding filmDo}" VerticalAlignment="Top" Width="166" Foreground="White"/>
+        <Label Content="Продолжительнось" HorizontalAlignment="Left" Height="23" Margin="162,171,0,0" VerticalAlignment="Top" Width="120" Foreground="White"/>
+        <TextBox x:Name="durationTB" HorizontalAlignment="Left" Height="23" Margin="293,171,0,0" TextWrapping="Wrap" Text="{Binding duration}" VerticalAlignment="Top" Width="166" Foreground="White"/>
+        <Label Content="Стоимость билета" HorizontalAlignment="Left" Height="23" Margin="162,194,0,0" VerticalAlignment="Top" Width="120" Foreground="White"/>
+        <TextBox x:Name="ticketPriceTB" HorizontalAlignment="Left" Height="23" Margin="293,194,0,0" TextWrapping="Wrap" Text="{Binding TicketPrice}" VerticalAlignment="Top" Width="166" Foreground="White"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Height="26" Margin="189,299,0,0" VerticalAlignment="Top" Width="151" Click="Button_Click"/>
+
+    </Grid>
+</Window>

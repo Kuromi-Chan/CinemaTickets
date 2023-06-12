@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "previewPath": "C:\\Users\\bizyu\\source\\repos\\WpfApp1\\WpfApp1\\previews\\kot-v-sapogakh.jpg",
+    "filmName": "Кот в сапогах 2",
+    "janr": "Приключения, Комедия, Анимация",
+    "rating": 8.1,
+    "filmDo": "22.05.2023",
+    "duration": 103,
+    "ticketPrice": 18.5
+  },
+  {
+    "id": 2,
+    "previewPath": "C:\\Users\\bizyu\\source\\repos\\WpfApp1\\WpfApp1\\previews\\uik.jpg",
+    "filmName": "Джон Уик",
+    "janr": "Триллер, Криминальный, Боевик",
+    "rating": 7.9,
+    "filmDo": "12.05.2023",
+    "duration": 103,
+    "ticketPrice": 18.5
+  },
+  {
+    "id": 3,
+    "previewPath": "C:\\Users\\bizyu\\source\\repos\\WpfApp1\\WpfApp1\\previews\\koty-ermitazha.jpg",
+    "filmName": "Коты эрмитажа",
+    "janr": "Комедия, Анимация",
+    "rating": 4.8,
+    "filmDo": "12.05.2023",
+    "duration": 103,
+    "ticketPrice": 18.5
+  },
+  {
+    "id": 4,
+    "previewPath": "C:\\Users\\bizyu\\source\\repos\\Kurs\\Kurs\\View\\previews\\mama-mafiya.jpg",
+    "filmName": "Мама мафия",
+    "janr": "Боевик, Комедия, Криминальный",
+    "rating": 6.3,
+    "filmDo": "17.05.2023",
+    "duration": 103,
+    "ticketPrice": 15
+  },
+  {
+    "id": 5,
+    "previewPath": "C:\\Users\\bizyu\\source\\repos\\Kurs\\Kurs\\View\\previews\\strazhi-galaktiki-chast-3.jpg",
+    "filmName": "Стражи Галактики. Часть 3",
+    "janr": "Боевик, Комедия, Фантастика",
+    "rating": 8.3,
+    "filmDo": "19.05.2023",
+    "duration": 159,
+    "ticketPrice": 16
+  },
+  {
+    "id": 6,
+    "previewPath": "Users\\bizyu\\source\\repos\\Kurs\\Kurs\\View\\previews\\kung-fu-zherebec.jpg",
+    "filmName": "Кунг-фу жеребец",
+    "janr": "Драма, Комедия, Анимация",
+    "rating": 7.3,
+    "filmDo": "22.05.2023",
+    "duration": 126,
+    "ticketPrice": 23
+  },
+  {
+    "id": 7,
+    "previewPath": "C:\\Users\\bizyu\\source\\repos\\Kurs\\Kurs\\View\\previews\\missiya-nlo.jpg",
+    "filmName": "Миссия «НЛО»",
+    "janr": "Фантастика",
+    "rating": 6.0,
+    "filmDo": "22.05.2023",
+    "duration": 115,
+    "ticketPrice": 12
+  },
+  {
+    "id": 8,
+    "previewPath": "C:\\Users\\bizyu\\source\\repos\\Kurs\\Kurs\\View\\previews\\zaklyate-poslednyaya-bitva.jpg",
+    "filmName": "Заклятье. Последняя битва",
+    "janr": "Ужасы",
+    "rating": 5.1,
+    "filmDo": "22.05.2023",
+    "duration": 101,
+    "ticketPrice": 14
+  },
+  {
+    "id": 9,
+    "previewPath": "C:\\Users\\bizyu\\source\\repos\\Kurs\\Kurs\\View\\previews\\novye-bogi-yan-czyan.jpg",
+    "filmName": "Новые боги: Ян Цзянь",
+    "janr": "Анимация, Боевик, Фэнтези",
+    "rating": 7.1,
+    "filmDo": "22.05.2023",
+    "duration": 130,
+    "ticketPrice": 18
+  },
+  {
+    "id": 10,
+    "previewPath": "C:\\Users\\bizyu\\source\\repos\\Kurs\\Kurs\\View\\previews\\piter-pen-i-vendi.jpg",
+    "filmName": "Питер Пэн и Венди",
+    "janr": "Комедия, Боевик, Фэнтези",
+    "rating": 5.0,
+    "filmDo": "22.05.2023",
+    "duration": 106,
+    "ticketPrice": 30
+  }
+
+  
+]

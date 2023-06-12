@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Kurs.Report"
+            
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kurs"
+             mc:Ignorable="d" 
+             xmlns:BoldReports="clr-namespace:BoldReports.UI.Xaml;assembly=BoldReports.Wpf"
+             d:DesignHeight="700" d:DesignWidth="1100" IsVisibleChanged="UserControl_IsVisibleChanged">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="621*"/>
+        </Grid.RowDefinitions>
+        <BoldReports:ReportViewer Name="ReportViewer" Margin="66,44,66,49" Grid.Row="1"/>
+    </Grid>
+</UserControl>
